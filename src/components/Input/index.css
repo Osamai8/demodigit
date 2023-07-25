@@ -1,0 +1,75 @@
+.customInputWrapper,
+.customSelectWrapper {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.customInputLabel,
+.customSelectLabel {
+  margin-bottom: -0.2rem;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+.customInputInner,
+.customSelectInner {
+  margin-top: 0.5rem;
+  background-color: var(--colorGray);
+  display: flex;
+  width: 20rem;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  align-items: center;
+}
+
+.customInputInner svg,
+.customSelectInner svg {
+  color: var(--colorPrimary);
+}
+
+.customInputInner input,
+.customSelectInner select {
+  padding: 0.5rem;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.customInputHelperText,
+.customSelectHelperText {
+  font-size: 0.7rem;
+  padding-top: 0.2rems;
+}
+
+.customInputErrorTxt,
+.customSelectErrorTxt {
+  color: var(--colorSecondary);
+}
+
+.customInputErrorBorder,
+.customSelectErrorBorder {
+  border: 1px solid var(--colorSecondary);
+}
+
+.customInputErrorBorder svg,
+.customSelectErrorBorder svg {
+  color: var(--colorSecondary);
+}
+
+.customInputPasswordVisible {
+  cursor: pointer;
+}
+
+/* _____________________________Custom Chip___________________________ */
+.customChipWraper {
+  background-color: #c5c5c7;
+  margin: 0.2rem 0;
+  margin-right: 5px;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  width: fit-content;
+  display: inline-block;
+}
+/* _____________________________Custom Chip___________________________ */

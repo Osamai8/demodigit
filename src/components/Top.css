@@ -1,0 +1,73 @@
+.topBarWrapper,
+.topBarWrapper1 {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  /* background-color: orange; */
+}
+.topBarWrapper1 {
+  justify-content: flex-start;
+}
+
+.tobBarBackBtn {
+  margin-top: 0.3rem;
+  cursor: pointer;
+  padding-right: 0.6rem;
+}
+
+.topBarWrapper1 a {
+  margin-top: 5px;
+  padding-right: 1rem;
+  color: var(--colorPrimary);
+}
+
+.topBarRightBtnsWrapper {
+  display: flex;
+}
+
+.topBarRightBtnsWrapper .csv {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  background-color: var(--colorPrimary);
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  color: #f1f1f1;
+  transition: transform 0.1s ease-in-out;
+  font-size: 0.9rem;
+  font-weight: 700;
+  min-width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topBarRightBtnsWrapper .csv:active {
+  transform: scale(0.96);
+}
+
+.topBarInner {
+  display: flex;
+  align-items: center;
+}
+
+.topBarInner > a {
+  margin-right: 1rem;
+  margin-top: 0.5em;
+}
+
+.csvBtn {
+  margin-right: 0.5rem;
+  outline: none;
+  border-radius: 0.3rem;
+  color: var(--colorPrimary);
+  border: 2px solid var(--colorPrimary);
+  cursor: pointer;
+  min-width: 8rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.5rem;
+}

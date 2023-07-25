@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+
+  <meta name='viewport' content='initial-scale=1, maximum-scale=1,user-scalable=no'>
+  <title>Sample Application</title>
+  <link rel='stylesheet' href='https://js.arcgis.com/3.35/esri/css/esri.css' />
+  <style>
+    html,
+    body,
+    #mapDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+  </style>
+  <script src='https://js.arcgis.com/3.35/'></script>
+  <script>
+    let baseUrl = `https://mapservice.gov.in/gismapservice/rest/services/BharatMapService`;
+    let villageToken = `pOsmzA00ygkfEWzUy4ZOF_GLqB2n3oBh4dlN3vy99h2RJ9t2NeGBrj-gie3O33VIahsXadsetYOa_xfuKrAHtg..`;
+    let districtToken = `dOnvjpsZwdA57845cvUyjZ60lOj0auyuT-n7ajYC9lAXkohGSGeUzZVTM3N94sK91b5YZBwX1BkiciB4iddpug..`;
+    let stateToken = `etcM1YZCfVGE_JkDd1eFTj1-PGGY-hKq439ccSlF_i4icl3qW9WPtZLwwAmugkRefBI1z_AK2pHXEpB1u1S83Q..`
+    var map;
+
+    require(['esri/dijit/BasemapLayer', 'esri/dijit/Basemap',
+      'esri/map', 'esri/geometry/Extent', 'esri/SpatialReference',
+      'esri/layers/ArcGISDynamicMapServiceLayer', 'esri/layers/ArcGISTiledMapServiceLayer'
+    ], function (BasemapLayer, Basemap,
+      Map, Extent, SpatialReference, ArcGISDynamicMapServiceLayer, ArcGISTiledMapServiceLayer) {
+      var nobasemap = new Basemap({ layers: [new BasemapLayer({ url: 'http://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer', opacity: 0 })] });
+      map = new Map('mapDiv', {
+        logo: false, showAttribution: false, basemap: nobasemap
+      });
+      map.addLayer(new ArcGISDynamicMapServiceLayer(`${baseUrl}/State_Boundary/MapServer?Token=${stateToken}`));
+      map.addLayer(new ArcGISDynamicMapServiceLayer(`${baseUrl}/District_Boundary/MapServer?Token=${districtToken}`));
+      map.addLayer(new ArcGISDynamicMapServiceLayer(`${baseUrl}/Village_Boundary/MapServer?Token=${villageToken}`));
+      map.setExtent(new Extent(66.62, 5.23, 98.87, 38.59, new SpatialReference({ wkid: 4326 })), true);
+    });
+
+  </script>
+</head>
+
+<body>
+  <div id='mapDiv'></div>
+</body>
+
+</html>

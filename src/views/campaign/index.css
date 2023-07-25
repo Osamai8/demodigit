@@ -1,0 +1,28 @@
+.page-title {
+  font-size: 1.7rem;
+  font-weight: 450;
+  margin: 50px 0;
+}
+
+.locationsWrapper {
+  position: relative;
+  padding: 1rem;
+}
+
+.locationsTable {
+  /* margin: 1rem; */
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--colorGray);
+}
+
+.locationsTable th,
+.locationsTable td {
+  text-align: left;
+  border: 1px solid var(--colorGray);
+  padding: 0.5rem 1rem;
+}
+
+.logoView {
+  height: 4rem;
+}

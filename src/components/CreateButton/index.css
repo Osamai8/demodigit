@@ -1,0 +1,13 @@
+.createButton {
+  border: 2px solid var(--colorPrimary);
+  font-size: 0.9rem;
+  color: var(--colorPrimary);
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  min-width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

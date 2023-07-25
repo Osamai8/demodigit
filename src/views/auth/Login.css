@@ -1,0 +1,156 @@
+.loginWrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #fff;
+}
+
+.loginLeft {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.loginLogoWrapper img {
+  height: 3rem;
+  margin: 1rem;
+}
+
+.loginHero {
+  padding: 3rem;
+}
+
+.loginHero h1 {
+  margin-bottom: 0.5rem;
+  color: var(--colorPrimary);
+}
+
+.loginRight {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  max-height: 100vh;
+}
+
+.loginTitleWrapper {
+  margin-top: 3rem;
+}
+
+.loginTitleWrapper p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginTitle {
+  color: var(--colorPrimary);
+  margin-bottom: 0.2rem;
+  position: relative;
+}
+
+.loginTitle::before {
+  content: "";
+  background-color: var(--colorSecondary);
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: -0.5rem;
+}
+
+.loginForm {
+  padding: 2rem;
+  margin: 0rem 0;
+}
+
+.loginFormInner {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginFormInner label {
+  margin-bottom: -0.2rem;
+  font-size: 0.9rem;
+}
+
+.loginInputWrapper {
+  margin-top: 0.5rem;
+  background-color: var(--colorGray);
+  display: flex;
+  padding: 0.5rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+}
+
+.loginInputWrapper input,
+.loginWrapper select {
+  border: none;
+  outline: none;
+  background-color: var(--colorGray);
+  padding: 0 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.loginWrapper select {
+  cursor: pointer;
+}
+
+.loginInputWrapper svg,
+.loginVisible svg {
+  color: var(--colorText1);
+}
+
+.loginInputWrapper.focus svg {
+  color: var(--colorPrimary);
+}
+
+.loginVisible {
+  cursor: pointer;
+}
+
+.loginBtn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--colorPrimary);
+  transition: background-color 0.3s ease;
+}
+
+.loginBtn:active {
+  background-color: #0a1977;
+}
+
+.loginFormInner a,
+.loginFormNav {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.8rem;
+  align-self: flex-end;
+  margin-top: 0.2rem;
+  color: #2f3d9ba2;
+}
+
+.forgotPass {
+  padding-top: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+}

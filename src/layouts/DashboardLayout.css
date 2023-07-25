@@ -1,0 +1,21 @@
+.dLayoutWrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--colorGray);
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.dLayoutMainWrapper {
+  margin-left: 1rem;
+}
+
+.dLayoutContentWrapper {
+  padding-right: 1rem;
+}
+
+.dLayoutContent {
+  background-color: #fff;
+  border-radius: 0.7rem;
+}

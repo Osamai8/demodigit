@@ -1,0 +1,82 @@
+.container {
+  background-color: white;
+  width: 50% !important;
+  margin: auto !important;
+  margin-top: 30px !important;
+}
+.form__fields label {
+  color: #263238;
+}
+.name,
+.email,
+.mobile,
+.state {
+  width: 100% !important;
+  margin-bottom: 30px !important;
+  color: black !important;
+}
+.name,
+.username,
+.mobile {
+  margin-right: 20px !important;
+}
+.state {
+  width: 100% !important;
+  margin-right: 20px !important;
+  margin-bottom: 30px !important;
+}
+.roles {
+  width: 100% !important;
+  /* margin-bottom: 4px !important; */
+}
+
+.username,
+.password,
+.district {
+  width: 100% !important;
+  /* margin-right: 20px !important; */
+
+  margin-bottom: 30px !important;
+}
+.district {
+  margin-bottom: 30px !important;
+}
+.gram {
+  /* margin-right: 20px !important; */
+  width: 100% !important;
+}
+.village {
+  width: 48.7% !important;
+}
+.block {
+  margin-right: 20px !important;
+  width: 100% !important;
+}
+.submit__button {
+  width: 100% !important;
+  color: white !important;
+  margin-bottom: 30px !important;
+}
+
+.errorTag {
+  color: #f44336;
+  margin: 0;
+  font-size: 0.75rem;
+  margin-top: 3px;
+  text-align: left;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+}
+
+@media (max-width: 480px) {
+  .form__fields,.userCreate{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .container{
+    width: 92% !important;
+  
+  }
+}

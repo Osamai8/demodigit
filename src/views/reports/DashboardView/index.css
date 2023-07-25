@@ -1,0 +1,36 @@
+.dashboardCards {
+}
+
+.dashboardCards ul {
+  list-style-type: none;
+  display: flex;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.dashboardCards ul li {
+  border-right: 1px solid #2f3d9b48;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+}
+
+.dashboardCards ul li:last-child {
+  border: none;
+}
+
+.dashboardCards ul li h1 {
+  margin-bottom: 0.1rem;
+  color: var(--colorPrimary);
+  font-weight: 800;
+}
+
+.dashboardCards ul li p {
+  font-size: 0.7rem;
+  color: #2f3d9bc2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

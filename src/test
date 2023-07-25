@@ -1,0 +1,43 @@
+PS D:\Elham projects\Dhwani\Frontend\adc_web_panel> npx depcheck
+npx: installed 121 in 11.369s
+Unused dependencies
+* @material-ui/styles
+* dotenv
+* framer-motion
+* google-map-react
+* google-maps-react
+* install
+* jquery
+* leaflet
+* lodash
+* material-ui-dropzone
+* npm
+* nprogress
+* path
+* query-string
+* react-bootstrap
+* react-google-recaptcha
+* react-icons
+* react-lines-ellipsis
+* react-material-ui-form-validator
+* react-reveal
+* react-svg-map
+* reactjs-popup
+* socket.io
+* socket.io-client
+* start
+* uuid
+* validator
+Unused devDependencies
+* eslint-config-airbnb
+* eslint-config-prettier
+* eslint-plugin-prettier
+* postcss
+* prettier
+Missing dependencies
+* eslint-config-react-app: .\package.json
+* @typescript-eslint/parser: .\package.json
+* eslint-plugin-flowtype: .\package.json
+* @typescript-eslint/eslint-plugin: .\package.json
+* babel-eslint: .\package.json
+* src: .\src\App.js

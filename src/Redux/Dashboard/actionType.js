@@ -1,0 +1,3 @@
+export const LIST_REQUEST = "LIST_REQUEST";
+export const FETCHED_DATA_SUCCESS = "FETCHED_DATA_SUCCESS";
+export const GET_FAILURE = "GET_FAILURE";
