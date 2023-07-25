@@ -32,12 +32,20 @@ const PurchaseView = () => {
             setIsLoading(false);
             const k = [
                 {
-                    title: "item ID",
+                    title: "Product Name",
+                    value: state.catalogName,
+                },
+                {
+                    title: "Item ID",
                     value: state.itemId,
                 },
                 {
                     title: "Quantity",
                     value: state.quantity,
+                },
+                {
+                    title: "Consent",
+                    value: state.consent,
                 },
                 {
                     title: "Created At",

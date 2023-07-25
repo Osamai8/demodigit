@@ -32,6 +32,15 @@ const LoanView = () => {
         if (state) {
             setIsLoading(false);
             const k = [
+
+                {
+                    title: "Bank Name",
+                    value: state.bankName,
+                },
+                {
+                    title: "Branch Name",
+                    value: state.branchName,
+                },
                 {
                     title: "Loan Amount",
                     value: state.loanAmount,

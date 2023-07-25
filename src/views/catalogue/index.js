@@ -54,7 +54,7 @@ const Catalogue = () => {
         const config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `http://localhost:8085/egov-wf/catalog/list${filterUrl(filterData)}`,
+            url: `https://demodigitapi.dhwaniris.com/egov-wf/catalog/list${filterUrl(filterData)}`,
         };
         setIsLoading(true)
         delete filterData.page

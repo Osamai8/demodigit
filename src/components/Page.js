@@ -54,7 +54,7 @@ const Page = forwardRef((props, ref) => {
 
 
       <div className={(btnTitle || downloadUrl) ? "topBarWrapper" : ""}>
-        {(<h2 className="topBarWrapper">{title}</h2>)}
+        {downloadUrl && (<h2>{title}</h2>)}
         <div className="topBarRightBtnsWrapper">
           {
             downloadUrl &&
@@ -72,7 +72,7 @@ const Page = forwardRef((props, ref) => {
       </div>
 
 
-      {/* {(!btnTitle && !downloadUrl) && (
+      {(!btnTitle && !downloadUrl) && (
         <div className="topBarWrapper">
           <div className="topBarInner">
             <div className="tobBarBackBtn" onClick={handleBackBtn}>
@@ -81,7 +81,7 @@ const Page = forwardRef((props, ref) => {
             <h2>{title}</h2>
           </div>
         </div>
-      )} */}
+      )}
       {filterData && <div className="filter">
         <Filter filterData={filterData} />
       </div>}

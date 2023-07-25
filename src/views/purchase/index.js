@@ -51,7 +51,7 @@ const Purchase = () => {
         const config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `http://localhost:8085/egov-wf/purchase/list${filterUrl(filterData)}`,
+            url: `https://demodigitapi.dhwaniris.com/egov-wf/purchase/list${filterUrl(filterData)}`,
             headers: {
                 'timestamp': '2023-07-21 10:25:06.599',
                 'userId': '1'
